@@ -36,7 +36,7 @@ return {
 			-- servers for mason to install
 			ensure_installed = {
 				"lua_ls",
-				"pyright",
+				--"pyright",
 				"gopls",
 				"marksman",
 			},
@@ -49,7 +49,6 @@ return {
 				"isort", -- python formatter
 				--"pylint",
 				"ruff",
-				"black",
 				"clangd",
 				"denols",
 				-- { 'eslint_d', version = '13.1.2' },
