@@ -38,7 +38,7 @@ return {
 				"lua_ls",
 				--"pyright",
 				"gopls",
-				"marksman",
+				-- "marksman",
 			},
 		})
 
