@@ -5,7 +5,6 @@ return {
   },
 
   config = function()
-    --  local dashboard = require("alpha.themes.startify")
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
 
@@ -37,3 +36,4 @@ return {
 ]])
   end,
 }
+

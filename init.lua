@@ -14,3 +14,5 @@ vim.opt.rtp:prepend(lazypath)
 -- Load all plugins from ~/.config/nvim/lua/plugins/, load vim options.
 require("vim-options")
 require("lazy").setup("plugins")
+
+
