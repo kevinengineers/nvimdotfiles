@@ -1,3 +1,7 @@
+vim.notify = function(msg, level, opts)
+  print(msg)
+end
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -14,5 +18,5 @@ vim.opt.rtp:prepend(lazypath)
 -- Load all plugins from ~/.config/nvim/lua/plugins/, load vim options.
 require("vim-options")
 require("lazy").setup("plugins")
-vim.cmd[[colorscheme tokyonight]]
 
+vim.cmd[[colorscheme tokyonight]]

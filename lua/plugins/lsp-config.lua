@@ -16,7 +16,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require('lspconfig')
 
       -- Diagnostics configuration
       vim.diagnostic.config({
@@ -26,24 +25,24 @@ return {
         update_in_insert = false,
       })
 
-      lspconfig.gopls.setup({
+      vim.lsp.config("gopls", {
         settings = {
           gopls = {
+            staticcheck = true,
             analyses = {
               unusedparams = true,
               nilness = true,
               unusedwrite = true,
             },
-            staticcheck = true,
           },
         },
       })
 
-      lspconfig.lua_ls.setup({
+      vim.lsp.config("lua_ls", {
         settings = {
           Lua = {
             diagnostics = {
-              globals = { "vim" },
+              globals = { "vim" }
             },
           },
         },
@@ -51,4 +50,3 @@ return {
     end
   }
 }
-
